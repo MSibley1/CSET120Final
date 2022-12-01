@@ -1,0 +1,128 @@
+/* Universal CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.head{
+    height: 12%;
+    position: relative;
+    top: 0%;
+    background-color: red;
+}
+
+.foot{
+ height: 12%;
+ width: inherit;
+ position: absolute;
+ bottom: 0%;
+ background-color: black;
+ padding-top: 20px;
+}
+.foot p{
+    color: white;
+    float: left;
+}
+.foot img{
+    float: right;
+    margin-left: 10px;
+}
+.header a {
+    float: left;
+    margin: 0px 15px;
+    padding: 20px;
+}
+.header-right{
+    float: right;
+}
+a, a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* SignUp CSS */
+.signForm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height: 40vh;
+    text-align: right;
+    font-size: 18px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 5px 3px grey;
+}
+
+.signForm>input{
+    width: 30vh;
+    margin-top:2.5vh;
+}
+
+.SignMain{
+    height: 76%;
+    width: inherit;
+    background-image: url(/Images/SignBack.jpg);
+    background-size: cover;
+}
+.form-group{
+    margin-top: 15px;
+}
+.form-group button{
+margin-right: 55px;
+margin-top: 2px;
+border-radius: 5px;
+background-color: red;
+padding: 5px;
+color: white;
+}
+/* Login CSS */
+
+
+
+
+/* Menu CSS */
+
+
+/* Payment CSS */
+#Payment {
+    width: 100vw;
+	min-height: 200px;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.paycon {
+    margin: 125px;
+    background: lightgray;
+	width: 625px;
+	min-height: fit-content;
+	display: flex;
+	justify-content:space-between;
+	align-items: flex-start;
+	padding: 0.5rem 1.5rem;
+    border: solid;
+    border-radius: 2%;
+}
+.left{
+	flex-basis: 50%;
+}
+.right{
+	flex-basis: 50%;
+}
+
+
+/* Receipt CSS */
+
+
+/* Management CSS */
