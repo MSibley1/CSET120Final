@@ -1,0 +1,42 @@
+body,html{
+    background-color: rgb(9, 0, 0);
+    
+}
+.nav-bar{
+padding-right: 5%;
+margin-right: 10px;
+margin-bottom: 100px;
+color:red;
+float:right;
+display: flexbox;
+
+
+}
+.menu{
+    padding: 2px;
+    margin:5px;
+    font-size: large;
+    color:red;
+    font-style: italic;
+    
+}
+
+h1{
+    font-size: 450%;
+    color: red;
+    padding-top: 3px;
+    margin: 5%;
+    font-style: italic;
+}
+img .deco{
+    size: 40px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+    content: url("https://www.blog.123rf.com/learn-how-to-design-a-chinese-fire-dragon-in-photoshop");
+
+
+}
+.sure{
+    
+}
