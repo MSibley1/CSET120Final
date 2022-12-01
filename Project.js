@@ -35,13 +35,11 @@ function signIn(e) {
         alert("Incorrect login credentials");
     }
     else{
-        location.href = "/";
+        location.href = "Menu.html";
     }
     e.preventDefault();
 }
 document.getElementById("headp").innerHTML=`Welcome, ${fname}`
-
-// Login JS
 
 
 // Menu JS
@@ -54,3 +52,6 @@ document.getElementById("headp").innerHTML=`Welcome, ${fname}`
 
 
 // Management JS
+function delUserData(params) {
+    
+}

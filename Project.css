@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-style: italic;
 }
 
 html, body{
@@ -11,16 +12,16 @@ html, body{
 }
 
 .head{
-    height: 12%;
+    height: 6%;
     position: relative;
     top: 0%;
     background-color: red;
 }
 
 .foot{
- height: 12%;
+ height: 7%;
  width: inherit;
- position: absolute;
+ position: fixed;
  bottom: 0%;
  background-color: black;
  padding-top: 20px;
@@ -91,7 +92,38 @@ color: white;
 
 
 /* Menu CSS */
+.menu{
+    padding: 2px;
+    margin:5px;
+    font-size: medium;
+    color:red;
+    font-style: italic;
+    text-align: center;
+    
+}
 
+h1{
+    font-size: 450%;
+    color: red;
+    padding-top: 3px;
+    margin: 5%;
+    font-style: italic;
+}
+img .deco{
+    size: 40px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+    content: url("https://www.blog.123rf.com/learn-how-to-design-a-chinese-fire-dragon-in-photoshop");
+
+
+}
+.leftside{
+    display: inline-flexbox;
+    float: left;
+    text-align: center;
+    margin-left: 15%;
+}
 
 /* Payment CSS */
 #Payment {
