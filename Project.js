@@ -38,8 +38,9 @@ function signIn(e) {
         location.href = "Menu.html";
     }
     e.preventDefault();
+    document.getElementById("fname").innerHTML=`Welcome, ${fname}`
 }
-document.getElementById("headp").innerHTML=`Welcome, ${fname}`
+
 
 
 // Menu JS
@@ -52,6 +53,7 @@ document.getElementById("headp").innerHTML=`Welcome, ${fname}`
 
 
 // Management JS
-function delUserData(params) {
-    
+function delUserData() {
+    localStorage.clear()
 }
+
