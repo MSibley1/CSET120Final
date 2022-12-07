@@ -103,6 +103,11 @@ color: white;
     font-style: italic;
     text-align: center;
 }
+.menu h3{
+    color:red;
+    font-style: italic;
+    text-align: center;
+}
 .menuitem{
     padding: 2px;
     margin:5px;
@@ -139,8 +144,7 @@ color: white;
 }
 .row{
     display: flex;
-    float: left;
-    width: 20%;
+    float: let;
     padding: 5px;
     align-content: center;
     
@@ -148,6 +152,10 @@ color: white;
 .row img{
     border: red solid ;
     height: 20vw;
+}
+
+.menu p{
+    color: black;
 }
 /* Payment CSS */
 #Payment {
@@ -178,3 +186,10 @@ color: white;
 
 
 /* Management CSS */
+.mancon{
+    margin: auto;
+}
+
+ .mancon h1{
+    text-align: center;
+ }

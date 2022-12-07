@@ -49,11 +49,20 @@ function signIn(e) {
 // Payment JS
 
 
-// Receipt JS
-
 
 // Management JS
 function delUserData() {
     localStorage.clear()
 }
 
+function pop(){
+    console.log("test")
+}
+
+function disableCaliItem() {
+    if (document.getElementsByClassName("CaliBtn").disabled = true){
+        document.getElementsByClassName("CaliBtn").disabled = false;
+    }
+    document.getElementsByClassName("CaliBtn").disabled = true;
+
+}
