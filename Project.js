@@ -1,4 +1,3 @@
-// SignUp JS
 const signUp = e => {
     let fname = document.getElementById('fname').value,
         lname = document.getElementById('lname').value,
@@ -35,13 +34,12 @@ function signIn(e) {
         alert("Incorrect login credentials");
     }
     else{
-        location.href = "/";
+        location.href = "Menu.html";
     }
     e.preventDefault();
+    document.getElementById("fname").innerHTML=`Welcome, ${fname}`
 }
-document.getElementById("headp").innerHTML=`Welcome, ${fname}`
 
-// Login JS
 
 
 // Menu JS
@@ -54,3 +52,6 @@ document.getElementById("headp").innerHTML=`Welcome, ${fname}`
 
 
 // Management JS
+function delUserData() {
+    localStorage.clear()
+}
