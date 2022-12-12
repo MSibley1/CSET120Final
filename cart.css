@@ -1,0 +1,93 @@
+body,html{
+    color: white;
+}
+h1{
+    color:red;
+    font-style: italic;
+    float: left;
+    
+}
+h2{
+    color: red;
+    font-style: italic;
+    display: flex;
+    float: right;
+}
+.checkout{
+    display: flex;
+    color:red;
+    list-style-type: none;
+    float: right;
+    margin-top: 35%;
+    padding-left: 10%;
+}
+.cancel{
+    margin-top: 35%;
+    color:red;
+    float:right;
+    padding-right: 10%;
+}
+
+.header{
+     
+}
+
+
+.main{
+    display:flex;
+    color:red;
+    float:right;
+
+}
+.container{
+
+}
+
+
+.footer-content{
+margin-bottom: 75%;
+
+}
+
+.head{
+    height: 13%;
+    position: relative;
+    top: 0%;
+    background-color: red;
+    z-index: 1;
+}
+
+.foot{
+    height: 7%;
+    width: inherit;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    padding-top: 20px;
+    z-index: 1;
+   }
+   .foot p{
+       color: white;
+       float: left;
+   }
+   .foot img{
+       float: right;
+       margin-left: 10px;
+   }
+   .header-right{
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
