@@ -1,29 +1,33 @@
-/* Universal CSS */
 *{
-    margin: 0;
-    padding: 0;
+    margin: auto 0px;
     box-sizing: border-box;
+    font-style: italic;
+    padding: 0;
 }
 
-html, body{
-    height: 100%;
-    width: 100%;
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
 }
+
 
 .head{
-    height: 12%;
+    height: 6%;
     position: relative;
     top: 0%;
     background-color: red;
+    z-index: 1;
 }
 
 .foot{
- height: 12%;
+ height: 7%;
  width: inherit;
- position: absolute;
- bottom: 0%;
+ position: fixed;
+ bottom: 0;
  background-color: black;
  padding-top: 20px;
+ z-index: 1;
 }
 .foot p{
     color: white;
@@ -71,8 +75,6 @@ a, a:visited{
 .SignMain{
     height: 76%;
     width: inherit;
-    background-image: url(/Images/SignBack.jpg);
-    background-size: cover;
 }
 .form-group{
     margin-top: 15px;
@@ -91,8 +93,61 @@ color: white;
 
 
 /* Menu CSS */
+.menu{
+    margin: 0px auto;
+}
+.menu h2{
+    font-size: medium;
+    color:red;
+    font-style: italic;
+    text-align: center;
+}
+.menuitem{
+    padding: 2px;
+    margin:5px;
+    font-size: medium;
+    color:red;
+    font-style: italic;
+    text-align: center;
+    z-index: 0;
+}
 
+ .menu h2{
+    font-size: 50px;
+    color: red;
+    padding-top: 3px;
+    font-style: italic;
+    text-align: center;
+}
 
+.menucolumn
+{
+    float: left;
+    width: 25%;
+}
+.menu::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.menu button{
+    border-radius: 5px;
+    background-color: red;
+    padding: 5px;
+    color: white;
+}
+.row{
+    display: flex;
+    float: left;
+    width: 20%;
+    padding: 5px;
+    align-content: center;
+    
+}
+.row img{
+    border: red solid ;
+    height: 20vw;
+}
 /* Payment CSS */
 #Payment {
     width: 100vw;
@@ -114,15 +169,9 @@ color: white;
     border: solid;
     border-radius: 2%;
 }
-.left{
-	flex-basis: 50%;
+h2{
+    color:red;
+    font-style: italic;
+    margin-top: 10%;
+    font-size: 200%;
 }
-.right{
-	flex-basis: 50%;
-}
-
-
-/* Receipt CSS */
-
-
-/* Management CSS */
