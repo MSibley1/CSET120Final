@@ -1,4 +1,3 @@
-// SignUp JS
 const signUp = e => {
     let fname = document.getElementById('fname').value,
         lname = document.getElementById('lname').value,
@@ -56,4 +55,3 @@ function signIn(e) {
 function delUserData() {
     localStorage.clear()
 }
-
