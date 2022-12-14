@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-style: italic;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -20,6 +21,7 @@ body{
     background-color: red;
     z-index: 1;
 }
+
 
 .foot{
  height: 7%;
@@ -88,8 +90,110 @@ background-color: red;
 padding: 5px;
 color: white;
 }
-/* Login CSS */
+.login .signForm{
+    height: 20vh;
+}
+.signForm  a{
+    color: red;
+}
+/* Landing CSS */
+.homeContent{
+    margin: 0 auto;
+    min-width: 100vw;
+    border: solid white;
+}
+.homeContent h1{
+    font-size: 65px;
+    color:red;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 50px;
+}
 
+.slideshow-container {
+    max-width: 85vw;
+    min-height: 30vh;
+    position: relative;
+    margin: auto;
+    
+  }
+  .homeContent img{
+    height: 60vh;
+  }
+
+  .mySlides {
+    display: none;
+  }
+  
+ 
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
 
 
@@ -97,13 +201,13 @@ color: white;
 .menu{
     margin: 0px auto;
 }
-.menu h2{
+.top h2{
     font-size: medium;
     color:red;
     font-style: italic;
     text-align: center;
 }
-.menu h3{
+.top h3{
     color:red;
     font-style: italic;
     text-align: center;
@@ -118,7 +222,7 @@ color: white;
     z-index: 0;
 }
 
- .menu h2{
+ .top h2{
     font-size: 50px;
     color: red;
     padding-top: 3px;
@@ -136,7 +240,13 @@ color: white;
     display: table;
     clear: both;
 }
-.menu button{
+button{
+    border-radius: 5px;
+    background-color: red;
+    padding: 5px;
+    color: white;
+}
+#sumbit{
     border-radius: 5px;
     background-color: red;
     padding: 5px;
@@ -185,11 +295,141 @@ color: white;
 /* Receipt CSS */
 
 
+
 /* Management CSS */
 .mancon{
-    margin: auto;
+    margin: auto 0;
 }
 
  .mancon h1{
     text-align: center;
  }
+
+
+
+
+ /* Cart CSS */
+
+
+ .shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+    width: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
