@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Management</title>
+    <title>Login</title>
     <link rel="stylesheet" href="Project.css">
 </head>
 <body>
     <header class="head">
         <div class="header">
             <a href="">D.A.M Good Food</a>
-            <a> Welcome Manager</a>
             <div class="header-right">
                 <a href="index.html">Home</a>
                 <a href="Menu.html">Menu</a>
@@ -21,13 +20,30 @@
             </div>
         </div>
     </header>
-    <div class="mancon">
-            <h1>Management Page</h1>
+    <div class="signForm">
+        <form>
+            <div class="form-group">
+            <input id="username">
+            </div>
+            <div class="form-group">
+            <input id="password">
+            </div>
+            <div>
+            <button type="button" onclick="getInfo()">Sign In</button>
+            </div>
+
+
+        </form>
+
+
+
+
+
     </div>
-    <div class="mancon">
-        <h3>User Data</h3>
-        <button onclick="delUserData(event)">Clear all user data</button>
-    </div>
+
+
+
+
 
     <footer class="foot">
         <p>Copyright: © DAM Good Food Inc. All rights reserved.</p>
