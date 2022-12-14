@@ -148,11 +148,11 @@ color: white;
   
   
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: black;
   }
   
   .text {
-    color: #f2f2f2;
+    color: white;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
@@ -162,7 +162,7 @@ color: white;
   }
   
   .numbertext {
-    color: #f2f2f2;
+    color: white;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
@@ -174,14 +174,14 @@ color: white;
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: gray;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
   }
   
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: red;
   }
   
 
@@ -298,13 +298,37 @@ button{
 
 /* Management CSS */
 .mancon{
-    margin: auto 0;
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
 }
-
- .mancon h1{
+.mancon h1{
     text-align: center;
- }
+    font-size: 125px;
+    color: red;
+}
+.mancon h3{
+    text-align: center;
+    font-size: 75px;
+    color: red;
 
+}
+.mancon button{
+    text-align: center;
+    display: block;
+    margin-left:  30px; ;
+    
+
+}
+.mancon li {
+    margin-top: 5px;
+    text-align: center;
+    display: block;
+    margin-left:  30px; ;
+}
 
 
 
@@ -321,7 +345,7 @@ button{
     text-align: center;
     font-weight: bold;
     font-size: 1.5em;
-    color: #333;
+    color: black;
     margin-bottom: 15px;
 }
 
@@ -338,7 +362,7 @@ button{
 
 .shop-item-price {
     flex-grow: 1;
-    color: #333;
+    color: black;
 }
 
 .shop-items {
@@ -350,7 +374,7 @@ button{
 .cart-header {
     font-weight: bold;
     font-size: 1.25em;
-    color: #333;
+    color: black;
 }
 
 .cart-column {
@@ -373,7 +397,7 @@ button{
 .cart-price {
     width: 20%;
     font-size: 1.2em;
-    color: #333;
+    color: black;
 }
 
 .cart-quantity {
@@ -381,7 +405,7 @@ button{
 }
 
 .cart-item-title {
-    color: #333;
+    color: black;
     margin-left: .5em;
     font-size: 1.2em;
 }
@@ -398,9 +422,9 @@ button{
     height: 34px;
     width: 50px;
     border-radius: 5px;
-    border: 1px solid #56CCF2;
-    background-color: #eee;
-    color: #333;
+    border: 1px solid red;
+    background-color: white;
+    color: black;
     padding: 0;
     text-align: center;
     font-size: 1.2em;
@@ -429,7 +453,8 @@ button{
 }
 
 .cart-total-price {
-    color: #333;
+    color: black;
     font-size: 1.1em;
 }
+
 
