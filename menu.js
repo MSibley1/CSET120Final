@@ -116,3 +116,64 @@ function enableSubmit(){
     }
     btn.disabled = !isValid;
     }
+
+
+    let promoCode = [
+        "Free99",
+        "MontezFoF",
+        "AbryaFoF",
+    ]
+    
+    
+    function promoCodes(){
+        let promo = document.getElementById("promo").value
+    
+        for(i = 0; i < promoCode.length; i++){
+            if(promo == promoCode[i])
+            {
+                document.getElementsByClassName('cart-total-price')[0].innerText = '$0.00'
+                alert("Promo code added")
+            }
+        }
+    }
+
+
+    function delUserData() {
+        localStorage.clear()
+        alert("All prior customer data has been deleted.")
+    }
+    
+    var manInfo = [
+        {
+            username:"Montez",
+            password: "1234"
+        },
+        {
+            username:"Abrya",
+            password:"1234"
+        }
+    ]
+    
+    
+    function getInfo() {
+        var username = document.getElementById("username").value
+        var password = document.getElementById("password").value
+    
+        for(i = 0; i < manInfo.length; i++){
+            if(username == manInfo[i].username && password == manInfo[i].password)
+            {
+                window.location.href = "Manage.html"
+            }
+        }
+    }
+    
+
+    let list = document.getElementById("myList");
+     
+    promoCode.forEach((item) => {
+      let li = document.createElement("li");
+      li.innerText = item;
+      list.appendChild(li);
+    });
+
+
